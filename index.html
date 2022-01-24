@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LET'S DO THIS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="modalbox">
+            <div id="modal">
+                <h1>This is the modal</h1>
+                <button onclick="undisplaymodal()">hi </button>
+            </div>
+        </div>
+        <div id="mainbox">
+            <div class="navigation">
+                <button onclick="displaymodal()">hi </button>
+                <a class="nav-link" href="#">Link1</a>
+                <a class="nav-link" href="#">Link2</a>
+                <a class="nav-link" href="#">Link3</a>
+                <a class="nav-link" href="#">Link4</a>
+            </div>
+            <div id="widgetBox">
+                <div id="verticalnav">
+                    <div id="one" class="logo"><img src="mtech.png"></div>
+                    <a href="https://google.com" target="_blank">Google</a>
+                    <a href="#">Link2</a>
+                    <a href="#">Link3</a>
+                    <a href="#">Link4</a>
+                </div>
+                <img class="widget" id="graphWidget"src="graphWidget.jpeg" alt="picture of a graph">
+                <img class="widget" id="pieWidget"src="pieChartWidget.webp" alt="picture of a graph">
+                <img class="widget" id="squiggleWidget"src="squiggle.png" alt="picture of a graph">
+            </div>
+        </div>
+    </body>
+    <script>
+        let overlay = document.getElementById('modalbox');
+        function displaymodal () {
+            overlay.style.display = "flex";
+        }
+        function undisplaymodal () {
+            overlay.style.display = "none";
+        }
+    </script>
+</html> 
